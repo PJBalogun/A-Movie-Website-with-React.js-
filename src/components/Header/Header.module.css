@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--darkGrey);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--maxWidth);
+  padding: 0.9rem 2.5rem;
+  margin: 0 auto;
+}
+.logo {
+  width: 8rem;
+  height: 3rem;
+}
+
+.tmdb_logo {
+  width: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 5rem;
+  }
+
+  .tmdb_logo {
+    width: 100px;
+  }
+}

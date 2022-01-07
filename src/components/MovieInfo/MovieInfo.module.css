@@ -1,0 +1,52 @@
+.movie_info_container {
+  display: flex;
+  max-width: var(--maxWidth);
+  margin: 0 5rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+}
+
+.movie_info {
+  width: 100%;
+  padding: 20px 40px;
+  color: var(--white);
+  overflow: hidden;
+}
+.movie_info .rating_directors {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1.7rem;
+}
+.movie_info .score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #000;
+  font-weight: 800;
+  border-radius: 50%;
+  padding: 7px;
+  margin-top: 0.85rem;
+}
+.movie_info .director {
+  margin: 0 0 0 40px;
+}
+.movie_info .director p {
+  margin-top: 1.2rem;
+}
+@media screen and (max-width: 780px) {
+  .movie_info_container {
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .movie_info_container {
+    margin: 0 1rem;
+  }
+  .movie_info_image {
+    display: none;
+  }
+}

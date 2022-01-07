@@ -1,0 +1,37 @@
+.description-container {
+  padding: 20px;
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+.description {
+  position: absolute;
+  z-index: 5;
+  bottom: 40px;
+  max-width: 700px;
+  margin-right: 20px;
+  min-height: 100px;
+  color: var(--white);
+}
+
+.description h1 {
+  font-size: var(--SuperBig);
+}
+
+.description p {
+  margin-top: 1.5rem;
+  font-size: var(--Small);
+  line-height: 1.4rem;
+}
+
+@media screen and (max-width: 720px) {
+  .description h1 {
+    font-size: var(--Big);
+  }
+
+  .description p {
+    font-size: var(--Small);
+  }
+  .description {
+    max-width: 100%;
+  }
+}

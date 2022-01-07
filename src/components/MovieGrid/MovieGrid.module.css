@@ -1,0 +1,6 @@
+.no_result {
+  margin: 2rem;
+  font-size: var(--SuperBig);
+  color: var(--medGrey);
+  text-align: center;
+}

@@ -1,0 +1,47 @@
+.movie_info_bar_container {
+  display: flex;
+  background: var(--darkGrey);
+  min-height: 100px;
+  padding: 0 20px;
+}
+
+.movie_info_bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bar {
+  background: var(--medGrey);
+  color: white;
+  font-size: var(--Med);
+  width: 30%;
+  text-align: center;
+  padding: 1.2rem 1.1rem;
+  border-radius: 10px;
+}
+.bar p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.bar span {
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .bar {
+    width: 100%;
+    margin: 1rem auto 0 auto;
+  }
+  .bar p {
+    flex-direction: row;
+  }
+  .bar:last-child {
+    margin-bottom: 1rem;
+  }
+}
